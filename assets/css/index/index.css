@@ -1,0 +1,58 @@
+.burger {
+  width: 46px;
+  height: 25px;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  position: relative;
+  background-color: transparent;
+}
+
+.burger-open {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+.navbar-nav-custom {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  position: absolute;
+  width: 500px;
+  background-color: var(--colorBlack);
+  color: var(--colorBlue);
+  top: 0;
+  right: 0;
+  padding: 30px 50px;
+  height: 100vh;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
+}
+
+.navbar-nav-custom-active {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.intro {
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(var(--colorGreen)), to(var(--colorBlue)));
+  background: linear-gradient(90deg, var(--colorGreen), var(--colorBlue));
+  height: 100vh;
+}
+
+.intro:after {
+  content: '';
+  position: absolute;
+  background-image: url("../../img/rectangle_2_165.png");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.3;
+}
+/*# sourceMappingURL=index.css.map */
