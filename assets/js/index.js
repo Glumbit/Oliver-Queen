@@ -16,7 +16,7 @@ function showNav(collection) {
 	}
 }
 
-const burgerOpen = document.querySelector('#burger-open');
+const burgerOpen = document.querySelector('.burger-open');
 
 document.addEventListener('click', (e) => {
 	const insideNav = e.composedPath().includes(nav);

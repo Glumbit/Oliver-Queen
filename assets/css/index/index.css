@@ -8,7 +8,7 @@
   background-color: transparent;
 }
 
-.burger-open {
+.burger-open-line {
   width: 100%;
   height: 3px;
   background-color: #ffffff;
@@ -38,19 +38,19 @@
           flex-direction: column;
 }
 
-.burger-close {
+.burger-close-line {
   position: absolute;
   width: 100%;
   height: 3px;
   background-color: #ffffff;
 }
 
-.burger-close:first-child {
+.burger-close-line:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.burger-close:last-child {
+.burger-close-line:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
