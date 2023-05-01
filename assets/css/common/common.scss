@@ -1,0 +1,13 @@
+.gradient-text {
+	background: linear-gradient(45deg, var(--colorBlue), var(--colorGreen));
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text {
+	font-size: 14px;
+}
+
+.list-title {
+	color: var(--colorBlue);
+}

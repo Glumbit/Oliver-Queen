@@ -1,9 +1,7 @@
-const burger = document.querySelectorAll('.burger');
 const nav = document.querySelector('.navbar-nav-custom');
-const navItem = document.querySelectorAll('.nav-item');
 
-showNav(burger)
-showNav(navItem)
+showNav(document.querySelectorAll('.burger'))
+showNav(document.querySelectorAll('.nav-item'))
 
 function showNav(collection) {
 	for (const i in collection) {
@@ -16,10 +14,24 @@ function showNav(collection) {
 	}
 }
 
-const burgerOpen = document.querySelector('.burger-open');
-
 document.addEventListener('click', (e) => {
 	const insideNav = e.composedPath().includes(nav);
-	const insideBurgerOpen = e.composedPath().includes(burgerOpen);
+	const insideBurgerOpen = e.composedPath().includes(document.querySelector('.burger-open'));
 	if (!insideNav && !insideBurgerOpen) nav.classList.remove("navbar-nav-custom-active");
 })
+
+const educationObserver = new IntersectionObserver(
+	(entries, observer) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("education-item-active")
+				observer.unobserve(entry.target)
+			}
+		});
+	},
+	{
+		rootMargin: '-100px'
+	}
+);
+
+document.querySelectorAll('.education-item').forEach(educationItem => educationObserver.observe(educationItem))

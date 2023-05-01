@@ -3,7 +3,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: var(--fontSans);
-	overflow: hidden;
+	color: #ffffff;
+	background-color: var(--colorBlack);
 }
 
 img {
@@ -18,4 +19,40 @@ a {
 
 textarea {
 	resize: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: inherit;
+}
+
+h1 {
+	font-size: 120px;
+}
+
+h2 {
+	font-size: 84px;
+}
+
+h3 {
+	font-size: 45px;
+}
+
+h4 {
+	font-size: 38px;
+}
+
+h5 {
+	font-size: 28px;
+}
+
+section {
+	padding: 180px 0;
+}
+
+ul {
+	list-style: none;
 }
