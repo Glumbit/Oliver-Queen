@@ -229,12 +229,12 @@
   background: var(--colorBlackSelected);
 }
 
-.education-items {
+.dots {
   padding: 97px 0;
   position: relative;
 }
 
-.education-items:before {
+.dots:before {
   content: '';
   position: absolute;
   width: 5px;
@@ -246,7 +246,7 @@
           transform: translateX(-50%);
 }
 
-.education-items:after {
+.dots:after {
   content: '';
   position: absolute;
   width: 20px;
@@ -259,31 +259,31 @@
   border-radius: 50%;
 }
 
-.education-item-active .education-item-header {
+.dot-active .dot-header {
   -webkit-transform: translate(0);
           transform: translate(0);
   opacity: 1;
 }
 
-.education-item-active .education-item-data {
+.dot-active .dot-data {
   -webkit-transform: translate(0);
           transform: translate(0);
   opacity: 1;
 }
 
-.education-item-active .education-mark:before {
+.dot-active .dot-mark:before {
   opacity: 1;
 }
 
-.education-item {
+.dot {
   position: relative;
 }
 
-.education-item:not(:last-child) {
+.dot:not(:last-child) {
   margin-bottom: 150px;
 }
 
-.education-mark {
+.dot-mark {
   position: absolute;
   width: 35px;
   height: 35px;
@@ -296,7 +296,7 @@
           transform: translate(-50%, -75%);
 }
 
-.education-mark:before {
+.dot-mark:before {
   content: '';
   position: absolute;
   left: 50%;
@@ -312,7 +312,7 @@
   transition: opacity 1000ms;
 }
 
-.education-item-header {
+.dot-header {
   text-transform: uppercase;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -323,7 +323,7 @@
   transition: opacity 1000ms 200ms, transform 1000ms 200ms, -webkit-transform 1000ms 200ms;
 }
 
-.education-item-data {
+.dot-data {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   opacity: 0;
@@ -343,7 +343,60 @@
   fill: var(--colorBlue);
 }
 
-.education-item-title {
+.dot-title {
   color: var(--colorBlue);
+}
+
+.work-img {
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  border: 2px solid #00d7bb;
+  padding: 25px;
+  margin: 0 auto;
+  fill: var(--colorBlue);
+}
+
+.work-img svg {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.skills-items {
+  background-color: var(--colorBlackSelected);
+  padding: 70px 0;
+}
+
+.skills-proggress {
+  width: 50%;
+  height: 3px;
+  background: var(--colorBlack);
+  margin: 0 auto;
+  position: relative;
+}
+
+.skills-proggres-bar {
+  position: absolute;
+  background: var(--colorBlue);
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.skills-proggres-bar:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--colorBlue);
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+}
+
+#skills-proggres-bar-1 {
+  width: 60%;
 }
 /*# sourceMappingURL=index.css.map */

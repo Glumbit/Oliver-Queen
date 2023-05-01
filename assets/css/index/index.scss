@@ -197,7 +197,7 @@
 	background: var(--colorBlackSelected);
 }
 
-.education-items {
+.dots {
 	padding: 97px 0;
 	position: relative;
 
@@ -227,19 +227,19 @@
 
 
 
-.education-item-active {
+.dot-active {
 
-	.education-item-header {
+	.dot-header {
 		transform: translate(0);
 		opacity: 1;
 	}
 
-	.education-item-data {
+	.dot-data {
 		transform: translate(0);
 		opacity: 1;
 	}
 
-	.education-mark {
+	.dot-mark {
 
 		&:before {
 			opacity: 1;
@@ -247,7 +247,7 @@
 	}
 }
 
-.education-item {
+.dot {
 	position: relative;
 
 	&:not(:last-child) {
@@ -255,7 +255,7 @@
 	}
 }
 
-.education-mark {
+.dot-mark {
 	position: absolute;
 	width: 35px;
 	height: 35px;
@@ -282,14 +282,14 @@
 	}
 }
 
-.education-item-header {
+.dot-header {
 	text-transform: uppercase;
 	transform: translateY(-50%);
 	opacity: 0;
 	transition: opacity 1000ms 200ms, transform 1000ms 200ms;
 }
 
-.education-item-data {
+.dot-data {
 	transform: translateY(-50%);
 	opacity: 0;
 	transition: opacity 1000ms 500ms, transform 1000ms 500ms;
@@ -305,6 +305,95 @@
 	fill: var(--colorBlue);
 }
 
-.education-item-title {
+.dot-title {
 	color: var(--colorBlue);
 }
+
+// work
+
+.work-img {
+	width: 94px;
+	height: 94px;
+	border-radius: 50%;
+	border: 2px solid #00d7bb;
+	padding: 25px;
+	margin: 0 auto;
+	fill: var(--colorBlue);
+
+	svg {
+		transform: translateY(-10%);
+	}
+}
+
+// skills
+
+.skills-items {
+	background-color: var(--colorBlackSelected);
+	padding: 70px 0;
+}
+
+.skills-proggress {
+	width: 50%;
+	height: 3px;
+	background: var(--colorBlack);
+	margin: 0 auto;
+	position: relative;
+}
+
+.skills-proggres-bar {
+	position: absolute;
+	background: var(--colorBlue);
+	top: 0;
+	bottom: 0;
+	left: 0;
+
+	&:before {
+		content: '';
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		background-color: var(--colorBlue);
+		border-radius: 50%;
+		top: 0;
+		right: 0;
+		transform: translate(50%);
+	}
+}
+
+#skills-proggres-bar-1 {
+	width: 60%;
+}
+
+// .skills-range {
+// 	width: 90%;
+// 	margin: 0 auto;
+// 	position: relative;
+// 	appearance: none;
+// 	display: block;
+// 	background-color: var(--colorBlack);
+// 	outline: none;
+// 	overflow: hidden;
+// 	border-radius: 50px;
+// 
+// 	&::-webkit-slider-thumb {
+// 		height: 15px;
+// 		width: 15px;
+// 		background: var(--colorBlue);
+// 		appearance: none;
+// 		cursor: pointer;
+// 		border-radius: 50px;
+// 		box-shadow: -605px 0 0 600px var(--colorBlue);
+// 		outline: solid var(--colorBlack);
+// 	}
+// 
+// 	&::-moz-range-thumb {
+// 		height: 15px;
+// 		width: 15px;
+// 		background: var(--colorBlue);
+// 		appearance: none;
+// 		cursor: pointer;
+// 		border-radius: 50px;
+// 		box-shadow: -605px 0 0 600px var(--colorBlue);
+// 		outline: solid var(--colorBlack);
+// 	}
+// }

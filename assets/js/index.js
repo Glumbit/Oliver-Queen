@@ -20,11 +20,11 @@ document.addEventListener('click', (e) => {
 	if (!insideNav && !insideBurgerOpen) nav.classList.remove("navbar-nav-custom-active");
 })
 
-const educationObserver = new IntersectionObserver(
+const dots = new IntersectionObserver(
 	(entries, observer) => {
 		entries.forEach(entry => {
 			if (entry.isIntersecting) {
-				entry.target.classList.add("education-item-active")
+				entry.target.classList.add("dot-active")
 				observer.unobserve(entry.target)
 			}
 		});
@@ -33,5 +33,17 @@ const educationObserver = new IntersectionObserver(
 		rootMargin: '-100px'
 	}
 );
-
-document.querySelectorAll('.education-item').forEach(educationItem => educationObserver.observe(educationItem))
+// 
+// document.querySelectorAll('.dot').forEach(dot => dots.observe(dot))
+// const skillsRange = document.querySelectorAll('.skills-range');
+// for (const key in skillsRange) {
+// 	if (Object.hasOwnProperty.call(skillsRange, key)) {
+// 		const el = skillsRange[key];
+// 		el.addEventListener("change", () => {
+// 			console.log(el.value);
+// 			console.log(el.parentElement.previousElementSibling);
+// 			el.parentElement.previousElementSibling.textContent = `${el.value}%`
+// 		})
+// 
+// 	}
+// }
