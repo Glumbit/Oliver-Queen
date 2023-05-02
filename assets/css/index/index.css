@@ -51,10 +51,11 @@
 
 .burger-close {
   border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 .burger-close:hover {
-  background-color: var(--colorBlackSelected);
+  background-color: var(--colorBlue);
 }
 
 .burger-close-line {
@@ -114,6 +115,19 @@
 .navbar-nav-custom-active {
   -webkit-transform: translate(0);
           transform: translate(0);
+}
+
+.nav-item {
+  -webkit-transition: background 500ms;
+  transition: background 500ms;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.nav-item:hover {
+  background: var(--colorBlue);
+  color: var(--colorBlackSelected);
 }
 
 .intro {
