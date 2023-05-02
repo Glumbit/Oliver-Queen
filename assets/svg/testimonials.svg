@@ -1,0 +1,7 @@
+<svg>
+	<symbol id="arrow" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+		<g>
+			<polyline points="24 40 32 32 24 24"/><polyline points="32 40 40 32 32 24"/>
+		</g>
+	</symbol>
+</svg>
