@@ -33,8 +33,8 @@ const dots = new IntersectionObserver(
 		rootMargin: '-100px'
 	}
 );
-// 
-// document.querySelectorAll('.dot').forEach(dot => dots.observe(dot))
+
+document.querySelectorAll('.dot').forEach(dot => dots.observe(dot))
 // const skillsRange = document.querySelectorAll('.skills-range');
 // for (const key in skillsRange) {
 // 	if (Object.hasOwnProperty.call(skillsRange, key)) {
@@ -44,6 +44,6 @@ const dots = new IntersectionObserver(
 // 			console.log(el.parentElement.previousElementSibling);
 // 			el.parentElement.previousElementSibling.textContent = `${el.value}%`
 // 		})
-// 
+//
 // 	}
 // }

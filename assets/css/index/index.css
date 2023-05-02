@@ -367,12 +367,18 @@
   padding: 70px 0;
 }
 
-.skills-proggress {
+.skills-item {
   width: 50%;
+  margin: 0 auto 61px;
+}
+
+.skills-proggress {
   height: 3px;
-  background: var(--colorBlack);
+  background: var(--colorBlackDark);
   margin: 0 auto;
   position: relative;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #000000;
+          box-shadow: inset 0px 1px 0px 0px #000000;
 }
 
 .skills-proggres-bar {
@@ -390,13 +396,78 @@
   height: 10px;
   background-color: var(--colorBlue);
   border-radius: 50%;
-  top: 0;
+  top: 50%;
   right: 0;
-  -webkit-transform: translate(50%);
-          transform: translate(50%);
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  -webkit-box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.6);
 }
 
-#skills-proggres-bar-1 {
-  width: 60%;
+#skills-proggres-bar-HTML {
+  width: 95%;
+}
+
+#skills-proggres-bar-illustrator {
+  width: 70%;
+}
+
+#skills-proggres-bar-js {
+  width: 75%;
+}
+
+#skills-proggres-bar-photoshop {
+  width: 95%;
+}
+
+#skills-proggres-bar-PHP {
+  width: 90%;
+}
+
+#skills-proggres-bar-sv {
+  width: 90%;
+}
+
+.gap-explanation {
+  --bs-gutter-x: 21px;
+}
+
+.explanation__item {
+  background-color: var(--colorBlackSelected);
+  padding: 39px;
+  height: 349px;
+  -webkit-transition: background 500ms, -webkit-transform 500ms;
+  transition: background 500ms, -webkit-transform 500ms;
+  transition: transform 500ms, background 500ms;
+  transition: transform 500ms, background 500ms, -webkit-transform 500ms;
+}
+
+.explanation__item:hover {
+  background: var(--colorBlue);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.explanation__item:hover .explanation__number {
+  opacity: 0.7;
+}
+
+.explanation__item:hover .explanation__title {
+  color: var(--colorBlack);
+}
+
+.explanation__number {
+  font-weight: 700;
+  color: var(--colorBlackDark);
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+}
+
+.explanation__title {
+  color: var(--colorBlue);
+  font-weight: 700;
+  font-size: 24px;
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
 }
 /*# sourceMappingURL=index.css.map */
