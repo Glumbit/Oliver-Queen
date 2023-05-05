@@ -35,15 +35,9 @@ const dots = new IntersectionObserver(
 );
 
 document.querySelectorAll('.dot').forEach(dot => dots.observe(dot))
-// const skillsRange = document.querySelectorAll('.skills-range');
-// for (const key in skillsRange) {
-// 	if (Object.hasOwnProperty.call(skillsRange, key)) {
-// 		const el = skillsRange[key];
-// 		el.addEventListener("change", () => {
-// 			console.log(el.value);
-// 			console.log(el.parentElement.previousElementSibling);
-// 			el.parentElement.previousElementSibling.textContent = `${el.value}%`
-// 		})
-//
-// 	}
-// }
+
+document.querySelector('.btn-more').addEventListener("click", () => {
+	for (let i = 0; i < 3; i++) {
+		document.querySelector('.blog--hidden').classList.remove('blog--hidden');
+	}
+})

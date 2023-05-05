@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 :root {
-  --fontLora: 'Lora',
-		serif;
-  --fontSans: 'Open Sans',
-		sans-serif;
+  --fontLora: "Lora",
+  	serif;
+  --fontSans: "Open Sans",
+  	sans-serif;
   --colorBlue: #05c7ae;
   --colorGreen: #00F298;
   --colorGreenDark: #39B456;
@@ -12,5 +12,4 @@
   --colorBlackSelected: #373a46;
   --colorWhite: #ededed;
   --colorGrey: #8491a2;
-}
-/*# sourceMappingURL=variables.css.map */
+}/*# sourceMappingURL=variables.css.map */

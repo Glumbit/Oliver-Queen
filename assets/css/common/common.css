@@ -1,6 +1,7 @@
 .gradient-text {
   background: linear-gradient(45deg, var(--colorBlue), var(--colorGreen));
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -11,5 +12,4 @@
 
 .list-title {
   color: var(--colorBlue);
-}
-/*# sourceMappingURL=common.css.map */
+}/*# sourceMappingURL=common.css.map */
