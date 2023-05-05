@@ -15,7 +15,7 @@
 </head>
 
 <body>
-	<header class="header z-2 container-fluid position-absolute">
+	<header class="header z-2 container-fluid position-fixed">
 		<div class="container">
 			<nav class="navbar navbar-light">
 				<div class="container-fluid">
@@ -64,7 +64,34 @@
 				</button>
 				<ul class="navbar-nav mr-auto mb-2 mb-lg-0">
 					<li class="nav-item text-center">
-						<a class="nav-link m-0 mx-lg-3" href="/">HOME</a>
+						<a class="nav-link m-0 mx-lg-3" href="#about">ABOUT</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link m-0 mx-lg-3" href="#education">EDUCATION</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link m-0 mx-lg-3" href="#work">WORK</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link m-0 mx-lg-3" href="#skills">SKILLS</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link m-0 mx-lg-3" href="#explanation">EXPLONATION</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link m-0 mx-lg-3" href="#portfolio">PORTFOLIO</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link m-0 mx-lg-3" href="#testimonials">TESTIMONIALS</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link m-0 mx-lg-3" href="#hire">HIRE ME</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link m-0 mx-lg-3" href="#blog">BLOG</a>
+					</li>
+					<li class="nav-item text-center">
+						<a class="nav-link m-0 mx-lg-3" href="#contacts">COONTACTS</a>
 					</li>
 				</ul>
 			</div>
@@ -78,12 +105,12 @@
 				<h5>Web & Interface Designer</h5>
 			</div>
 		</section>
-		<section class="about pb-0">
+		<section class="about pb-0" id="about">
 			<div class="container">
 				<div class="row row-cols-1 row-cols-xxl-2">
 					<div class="col d-flex flex-column justify-content-center align-items-center mb-5 mb-xxl-0">
 						<div class="about__img mb-5">
-							<img class="position-relative z-2" src="assets/img/about/about-person.png" alt="">
+							<img class="position-relative" src="assets/img/about/about-person.png" alt="">
 						</div>
 						<button class="btn btn-about text d-flex">
 							<div class="btn__icon-about me-2">
@@ -211,7 +238,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="education">
+		<section class="education" id="education">
 			<div class="container">
 				<h3 class="gradient-text mb-4 fw-bold text-uppercase text-center mb-5">education</h3>
 				<div class="education__img">
@@ -303,7 +330,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="work">
+		<section class="work" id="work">
 			<div class="container">
 				<h3 class="gradient-text mb-4 fw-bold text-uppercase text-center mb-5">work experience</h3>
 				<div class="work__img">
@@ -395,7 +422,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="skills pb-0">
+		<section class="skills pb-0" id="skills">
 			<h3 class="gradient-text mb-4 fw-bold text-uppercase text-center mb-5">PROFESSIONAL SKILLS</h3>
 			<div class="skills__items">
 				<div class="row row-cols-1 row-cols-md-2 g-0">
@@ -480,7 +507,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="explanation">
+		<section class="explanation" id="explanation">
 			<div class="container">
 				<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 justify-content-center gy-5">
 					<div class="col">
@@ -532,7 +559,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="portfolio pb-0">
+		<section class="portfolio pb-0" id="portfolio">
 			<h3 class="gradient-text mb-4 fw-bold text-uppercase text-center mb-5">SOME OF MY WORKS</h3>
 			<div class="portfolio__items">
 				<div class="container">
@@ -607,7 +634,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="testimonials mb-5">
+		<section class="testimonials mb-5" id="testimonials">
 			<div class="container">
 				<h3 class="gradient-text mb-4 fw-bold text-uppercase text-center mb-5">CLIENT TESTIMONIALS</h3>
 				<div class="testimonials__items">
@@ -668,7 +695,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="hire">
+		<section class="hire" id="hire">
 			<div class="container">
 				<div class="row">
 					<div class="col-2 d-none d-md-block">
@@ -696,7 +723,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="blog">
+		<section class="blog" id="blog">
 			<div class="container d-flex align-items-center flex-column">
 				<h3 class="gradient-text mb-4 fw-bold text-uppercase text-center mb-5">blog posts</h3>
 				<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4 mb-4">
@@ -858,7 +885,7 @@
 				<div class="btn btn-more">load more</div>
 			</div>
 		</section>
-		<section class="contact pt-0">
+		<section class="contact pt-0 pb-0" id="contacts">
 			<div class="container">
 				<h3 class="gradient-text mb-4 fw-bold text-uppercase text-center mb-5">contact me</h3>
 				<form action="#" method="get" class="form form-contact">
