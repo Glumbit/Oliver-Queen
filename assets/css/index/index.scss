@@ -6,6 +6,18 @@
 .header--fixed {
 	position: fixed;
 	background: linear-gradient(45deg, rgba($color: #00d7bb, $alpha: 0.8), rgba($color: #00F298, $alpha: 0.8));
+	animation-name: headerShow;
+	animation-duration: 500ms;
+}
+
+@keyframes headerShow {
+	from {
+		transform: translateY(-100%);
+	}
+
+	to {
+		transform: translateY(0%);
+	}
 }
 
 .contacts__item-header {
