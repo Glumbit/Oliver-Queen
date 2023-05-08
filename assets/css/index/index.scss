@@ -1,6 +1,11 @@
 .header {
 	z-index: 6;
-	background: rgba($color: #00d7bb, $alpha: 0.5);
+	position: absolute;
+}
+
+.header--fixed {
+	position: fixed;
+	background: linear-gradient(45deg, rgba($color: #00d7bb, $alpha: 0.8), rgba($color: #00F298, $alpha: 0.8));
 }
 
 .contacts__item-header {
@@ -140,6 +145,7 @@
 
 .about__img {
 	position: relative;
+	padding-top: 60px;
 
 	&:before {
 		content: '';
@@ -147,7 +153,7 @@
 		height: 100%;
 		position: absolute;
 		border: 7px solid #00d7bb;
-		transform: translate(20%, -20%);
+		transform: translate(10%, -10%);
 	}
 }
 

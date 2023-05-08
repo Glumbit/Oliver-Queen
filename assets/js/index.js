@@ -1,3 +1,14 @@
+const header = document.querySelector('header');
+window.addEventListener("scroll", () => {
+	const about = document.querySelector('.about');
+	if (about.offsetTop <= window.scrollY) {
+		header.classList.add("header--fixed")
+	}
+	else {
+		header.classList.remove("header--fixed")
+	}
+})
+
 const nav = document.querySelector('.navbar-nav-custom');
 
 showNav(document.querySelectorAll('.burger'))
