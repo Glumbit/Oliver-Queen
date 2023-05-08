@@ -108,7 +108,7 @@
   flex-direction: column;
 }
 
-.navbar-nav-custom-active {
+.navbar-nav-custom--active {
   transform: translate(0);
 }
 
@@ -240,15 +240,15 @@
   border-radius: 50%;
 }
 
-.dot-active .dot__header {
+.dot--active .dot__header {
   transform: translate(0);
   opacity: 1;
 }
-.dot-active .dot__data {
+.dot--active .dot__data {
   transform: translate(0);
   opacity: 1;
 }
-.dot-active .dot__mark:before {
+.dot--active .dot__mark:before {
   opacity: 1;
 }
 
